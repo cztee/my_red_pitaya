@@ -423,3 +423,4 @@ dismissDialog("Sourcing Tcl script 'red_pitaya_vivado_project_Z20_4.tcl'"); // b
 // [GUI Memory]: 130 MB (+7566kb) [00:00:48]
 // TclEventType: FILE_SET_CHANGE
 // TclEventType: DG_GRAPH_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,545 MB. GUI used memory: 71 MB. Current time: 1/16/24, 3:38:52 PM CST
