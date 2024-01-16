@@ -1,0 +1,2 @@
+1. The vivado edited top_4ADC.sv files is located at 
+/home/ntucms_wsl/RedPitaya-FPGA/prj/v0.94/project/redpitaya.srcs/sources_1/imports/RedPitaya-FPGA/prj/v0.94/rtl

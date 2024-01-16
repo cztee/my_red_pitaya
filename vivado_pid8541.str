@@ -605,3 +605,6 @@ selectButton(PAResourceTtoZ.TouchpointSurveyDialog_REMIND_ME_LATER, "Remind me L
 dismissDialog("Feedback Request"); // aH (cs)
 // [Engine Memory]: 2,607 MB (+22821kb) [00:50:12]
 // HMemoryUtils.trashcanNow. Engine heap size: 2,608 MB. GUI used memory: 171 MB. Current time: 1/16/24, 4:50:06 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,609 MB. GUI used memory: 172 MB. Current time: 1/16/24, 5:20:06 PM CST
+// Elapsed time: 2326 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aL (aI, cs)
