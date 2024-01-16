@@ -110,7 +110,7 @@ module red_pitaya_top_4ADC #(
   input  logic [ 2-1:0] daisy_p_i  ,  // line 1 is clock capable
   input  logic [ 2-1:0] daisy_n_i  ,
   // LED
-  inout  logic [ 8-1:0] led_o
+  output  logic [ 8-1:0] led_o
 );
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -468,7 +468,7 @@ red_pitaya_hk_4adc #(.DWE(DWE)) i_hk (
   .frstn_i         (frstn[0]),  // reset - active low
   .spi_done_o      (spi_done),  // PLL reset
   // LED
-  .led_o           (led_o       ),  // LED output
+  //.led_o           (led_o       ),  // LED output
   .daisy_mode_o    (daisy_mode),
 
   // idelay control
@@ -697,5 +697,15 @@ red_pitaya_daisy i_daisy (
   .sys_ack_o       (  sys[5].ack                 )
 );
 
+reg [27:0]counter = 28'd0;
+reg led = 1'b0;
+always @ (posedge adc_clk_01) begin //this differs for the code provided by the red pitaya official webpage
+    counter = counter+1;
+    if (counter == 28'd256000000) begin      // 256e6 periods of clock of 125 MHz
+        led = ~led;                          // led will blink with a period of aprox. 2 sec
+        counter = 28'd0;                     // reset the counter
+    end
+end
+assign led_o[0] = led;    
 
 endmodule: red_pitaya_top_4ADC

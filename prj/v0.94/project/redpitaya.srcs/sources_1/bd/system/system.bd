@@ -2059,12 +2059,6 @@
       }
     },
     "interface_nets": {
-      "s_axi_hp1_1": {
-        "interface_ports": [
-          "S_AXI_HP1",
-          "processing_system7/S_AXI_HP1"
-        ]
-      },
       "s_axi_hp2_1": {
         "interface_ports": [
           "S_AXI_HP2",
@@ -2111,6 +2105,12 @@
         "interface_ports": [
           "S_AXI_HP0",
           "processing_system7/S_AXI_HP0"
+        ]
+      },
+      "s_axi_hp1_1": {
+        "interface_ports": [
+          "S_AXI_HP1",
+          "processing_system7/S_AXI_HP1"
         ]
       },
       "processing_system7_0_M_AXI_GP0": {

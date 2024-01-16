@@ -424,3 +424,25 @@ dismissDialog("Sourcing Tcl script 'red_pitaya_vivado_project_Z20_4.tcl'"); // b
 // TclEventType: FILE_SET_CHANGE
 // TclEventType: DG_GRAPH_STALE
 // HMemoryUtils.trashcanNow. Engine heap size: 1,545 MB. GUI used memory: 71 MB. Current time: 1/16/24, 3:38:52 PM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// G (cs): Invalid Top Module: addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 2989 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (G)
+dismissDialog("Invalid Top Module"); // G (cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,643 MB. GUI used memory: 63 MB. Current time: 1/16/24, 4:08:52 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,643 MB. GUI used memory: 63 MB. Current time: 1/16/24, 4:38:52 PM CST

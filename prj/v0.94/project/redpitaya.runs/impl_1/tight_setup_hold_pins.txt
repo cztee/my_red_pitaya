@@ -1,0 +1,9 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|            pll_adc_clk_0 |            pll_adc_clk_0 |                                                                                   i_hk/sys_rdata_reg[3]/D|
+|            pll_adc_clk_0 |            pll_adc_clk_0 |                                                                                   i_hk/sys_rdata_reg[0]/D|
+|            pll_adc_clk_0 |            pll_adc_clk_0 |                                                                                   i_hk/sys_rdata_reg[2]/D|
+|            pll_adc_clk_0 |            pll_adc_clk_0 |                                                                                   i_hk/sys_rdata_reg[1]/D|
+|               clk_fpga_3 |               clk_fpga_3 |ps/system_i/axi_protocol_converter_0/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[9]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
