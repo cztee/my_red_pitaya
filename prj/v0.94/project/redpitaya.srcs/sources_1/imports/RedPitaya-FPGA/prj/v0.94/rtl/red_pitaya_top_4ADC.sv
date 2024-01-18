@@ -697,6 +697,30 @@ red_pitaya_daisy i_daisy (
   .sys_ack_o       (  sys[5].ack                 )
 );
 
+////////////////////////////////////////////////////////////////////////////////
+// LED
+////////////////////////////////////////////////////////////////////////////////
+
+led i_led (
+   // signals
+  .clk_i           (adc_clk_01  ),  // clock
+  .rstn_i          (adc_rstn_01 ),  // reset - active low
+  .led_o           (led_o     ),    // LEDs
+  //.dat_a_i         (adc_dat[0]),  // in 1
+  //.dat_b_i         (adc_dat[1]),  // in 2
+  //.dat_a_o         (pid_dat[0]),  // out 1
+  //.dat_b_o         (pid_dat[1]),  // out 2
+  // System bus
+  .sys_addr        (sys[3].addr ),
+  .sys_wdata       (sys[3].wdata),
+  .sys_wen         (sys[3].wen  ),
+  .sys_ren         (sys[3].ren  ),
+  .sys_rdata       (sys[3].rdata),
+  .sys_err         (sys[3].err  ),
+  .sys_ack         (sys[3].ack  )
+);
+
+/*
 reg [27:0]counter = 28'd0;
 reg led = 1'b0;
 always @ (posedge adc_clk_01) begin //this differs for the code provided by the red pitaya official webpage
@@ -707,5 +731,6 @@ always @ (posedge adc_clk_01) begin //this differs for the code provided by the 
     end
 end
 assign led_o[0] = led;    
+*/
 
 endmodule: red_pitaya_top_4ADC

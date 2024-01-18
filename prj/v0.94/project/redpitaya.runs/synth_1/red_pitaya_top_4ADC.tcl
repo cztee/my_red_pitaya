@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param iconstr.diffPairPulltype opposite
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -113,6 +112,7 @@ read_verilog -library xil_defaultlib {
   /home/ntucms_wsl/RedPitaya-FPGA/prj/v0.94/project/redpitaya.srcs/sources_1/imports/RedPitaya-FPGA/rtl/classic/red_pitaya_scope.v
   /home/ntucms_wsl/RedPitaya-FPGA/prj/v0.94/project/redpitaya.srcs/sources_1/imports/RedPitaya-FPGA/rtl/spi_master.v
 }
+read_vhdl -library xil_defaultlib /home/ntucms_wsl/RedPitaya-FPGA/prj/v0.94/project/redpitaya.srcs/sources_1/new/led.vhd
 add_files /home/ntucms_wsl/RedPitaya-FPGA/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/system.bd
 set_property used_in_implementation false [get_files -all /home/ntucms_wsl/RedPitaya-FPGA/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ip/system_axi_protocol_converter_0_0/system_axi_protocol_converter_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/ntucms_wsl/RedPitaya-FPGA/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ip/system_proc_sys_reset_0/system_proc_sys_reset_0_board.xdc]

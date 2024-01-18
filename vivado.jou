@@ -2,16 +2,21 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Tue Jan 16 15:59:45 2024
-# Process ID: 8541
+# Start of session at: Thu Jan 18 17:17:11 2024
+# Process ID: 522172
 # Current directory: /home/ntucms_wsl/RedPitaya-FPGA
-# Command line: vivado -source red_pitaya_vivado_project_Z20_4.tcl -tclargs v0.94 
+# Command line: vivado
 # Log file: /home/ntucms_wsl/RedPitaya-FPGA/vivado.log
 # Journal file: /home/ntucms_wsl/RedPitaya-FPGA/vivado.jou
 #-----------------------------------------------------------
 start_gui
-source red_pitaya_vivado_project_Z20_4.tcl
+open_project /home/ntucms_wsl/RedPitaya-FPGA/prj/v0.94/project/redpitaya.xpr
 update_compile_order -fileset sources_1
+file mkdir /home/ntucms_wsl/RedPitaya-FPGA/prj/v0.94/project/redpitaya.srcs/sources_1/new
+close [ open /home/ntucms_wsl/RedPitaya-FPGA/prj/v0.94/project/redpitaya.srcs/sources_1/new/led.vhd w ]
+add_files /home/ntucms_wsl/RedPitaya-FPGA/prj/v0.94/project/redpitaya.srcs/sources_1/new/led.vhd
+update_compile_order -fileset sources_1
+reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 3
 wait_on_run impl_1
 open_run impl_1
